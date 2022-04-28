@@ -12,17 +12,24 @@ my_screen.canvwidth = 3000
 my_screen.canvheight = 3000
 #colors = ["royal blue", "gold", "red", "dark magenta", "midnight blue", "orange red"]
 tim.speed(0)
-angle = 166
+angle = 186
 count = 0
+tim.penup()
+tim.setposition(-260,0)
+tim.pendown()
+tim.pensize(2)
 #while angle <= 360:   #for making circle
 #    tim.left(angle)
 #    tim.circle(100)
 #    angle += 1
 #    tim.color(random_color())
 while count <= 360:   #for making spiro
-     tim.forward(300)
+     tim.forward(200)
+     tim.left(5)
+     tim.forward(200)
+     tim.left(5)
+     tim.forward(200)
      tim.left(angle)
-
      count += 1
      tim.color(random_color())
 
